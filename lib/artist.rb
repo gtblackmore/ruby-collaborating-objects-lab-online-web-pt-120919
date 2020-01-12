@@ -15,11 +15,11 @@ class Artist
   
   def add_song(song_name)
     song_name.artist = self
-    @@songs << song_name
+    @songs << song_name
   end
   
   def songs
-    @@songs
+    @songs
   end
   
   def find_or_create_by_name(name)
