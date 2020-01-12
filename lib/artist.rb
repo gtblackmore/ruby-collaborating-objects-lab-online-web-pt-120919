@@ -23,7 +23,12 @@ class Artist
   end
   
   def find_or_create_by_name(name)
-    if 
+    @@all.each do |artist|
+      if artist.name != name
+        Artist.new(name)
+      else
+        
+        
   
    
 
